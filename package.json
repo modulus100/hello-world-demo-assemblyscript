@@ -1,0 +1,24 @@
+{
+  "name": "hello-world-demo-assemblyscript",
+  "version": "0.0.1",
+  "description": "very basic smart contract demo",
+  "scripts": {
+    "dev": "watch -d -n 1 'clear && yarn test'",
+    "test": "yarn asp -f unit.spec",
+    "clean": "rm -rf ./build && rm -rf ./neardev",
+    "build": "asb --target debug",
+    "build:release": "asb",
+    "asp": "asp --verbose --nologo"
+  },
+  "keywords": [],
+  "author": "hello@near.org",
+  "license": "ISC",
+  "devDependencies": {
+    "@as-pect/cli": "^6.2.4",
+    "eslint": "^8.12.0",
+    "eslint-config-airbnb-typescript-prettier": "^5.0.0",
+    "near-sdk-as": "^3.2.3",
+    "prettier": "^2.6.1",
+    "typescript": "^4.6.3"
+  }
+}
